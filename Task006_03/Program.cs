@@ -8,15 +8,14 @@
 918 -> 1
 */
 
-//Решение с применением методов
+//Решение с применением методов (две попытки ввода)
 
 //Добавим метод, который запрашивает у пользователя трёхзначное число
 
 int PutNumber(string message)
 {
-    Console.WriteLine(message);
-    string a = Console.ReadLine();
-    int result = int.Parse(a);
+    Console.Write(message);
+    int result = int.Parse(Console.ReadLine()!);
     return result;
 }
 
